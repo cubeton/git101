@@ -28,6 +28,11 @@ It should look something like:
 
 It may prompt you to log in with your GitHub information.
 
+### Alternative Step 1: Creating a git repo locally on your machine
+
+To start a repository locally, you use cd to folder you want to start the git repository in. 
+
+Later on you can upload your local repository to GitHub or another 
 
 ### Step 2: Checking our your project
 
@@ -47,13 +52,28 @@ Now that you have the project on your local machine, you can look at all the fil
 
 ### Step 9: Cool features: the blame tool
 
+
 Ever see a piece of completely incomprehensible code? Want to know who to complain to? **Git blame** is here to help!
 
 
 
 Unfortunate side effect - I find that half the time when I use the blame tool to see who wrote a terrible piece of code, that it was me :(
 
-### Step 9: Basking in your git glory
+### Step 10: A cautionary tale
+
+Git is powerful. Git can do a lot of things. Git can also help you undo most changes and mistakes you've made (see 'reference log' or 'reflog').
+
+There is one thing to keep in mind about git - it has access to your files and can modify them. With the wrong command, you can do really dangerous things. 
+
+When I was starting to learn git, I did not know what I was doing. I used ```git init .``` in my home directory which initializes a git repo and adds all your files in it (recursively). Essentially I had put every file in a git repo.'
+
+Then, when I wanted to undo this I used the ```git rm . -r``` command. This recursively whiped my entire computer. There were some ways to recover it, but.... yeah
+
+Be careful with any 'rm' command.
+
+Learn from my mistake!
+
+### Step 11: Basking in your git glory
 
 Great job!
 <img width="500" alt="octocat" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
