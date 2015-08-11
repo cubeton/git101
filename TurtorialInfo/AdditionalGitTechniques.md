@@ -12,7 +12,9 @@ which initalizes a repository in that given folder
 
 #### Pushing a repo onto GitHub
 
-Create a local repository using the ```git init``` command and create commits using the ```git add``` and ```git commit``` commands.
+Create a local repository using the ```git init``` command and create commits using the ```git add <your file name>``` and ```git commit -m "your commit message"``` commands.
+
+Helpful tip: If you wanted to add all your changed files to the staging environment, you can use the ```git add .``` command (the period indicates to add all files).
 
 Then you can go into GitHub and create a new repository:
 <img width="1005" alt="screen shot 2015-08-10 at 10 29 12 pm" src="https://cloud.githubusercontent.com/assets/5241432/9188864/4a7b13c4-3faf-11e5-87fb-a13f31db8803.png">
