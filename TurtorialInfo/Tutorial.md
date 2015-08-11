@@ -6,11 +6,11 @@ Any important git-related words are **bolded**
 
 In this tutorial we're going to simulate what it would be like working on a big, collaborative project. This will involve making changes to the code base, opening up a **pull request (PR)** and **merging** your code into the master branch.
 
-### Step 0: Send me your GitHub username
+# Step 0: Send me your GitHub username
 
 **To push code changes to a GitHub repostiory, you must be listed as a collaborator on that repository. Please email me your GitHub username at git101@hubspot.com so I can add you as a collaborator to the git101 repository.**
 
-### Step 1:  Cloning from a remote server to your local machine 
+# Step 1:  Cloning from a remote server to your local machine 
 
 The process of downloading a **repo** from a remote server to your local machine is known as **cloning**.
 
@@ -33,7 +33,7 @@ It should look something like:
 
 It may prompt you to log in with your GitHub information.
 
-### Step 2: Checking our your project
+# Step 2: Checking out your project
 
 Now that you have the project on your local machine, you can look at all the files and the changes that have been made to it. There's a couple things you can check out:
 
@@ -49,7 +49,7 @@ Using the command ```git branch``` you can see what branches a project contains
 
 In the picture above you can see that this one project has three branches in it. The master branch (which is basically always there), and 'my-new-branch' and 'my-second-cool-feature'.
 
-### Step 3: Creating a new branch
+# Step 3: Creating a new branch
 
 You can create a new branch to base your changes off of. What this will do is make a pointer to the current commit you're out, an start basing your code from those changes.
 
@@ -67,7 +67,7 @@ Afterwards you can use the ```git branch``` command to confirm that your branch 
  
 You should notice that you're now pointed towards your new branch as well.
 
-### Step 4: Adding a new file to the repo
+# Step 4: Adding a new file to the repo
 
 Go ahead and add a new file to the project. You can use any text editor you like. Name it something like yourname.txt.
 Once you add or modify files in a folder that contains a git repo, git notices it. But it won't add the file to a commit unless you tell it to.
@@ -78,7 +78,7 @@ After creating the new file, you can use the ```git status``` command to see wha
 
 What this is saying above is, 'Hey, we noticed you created a new file mnelson.txt, but unless you use the ```git add`` command we aren't going to touch it.'
 
-### Step 5: Creating a commit
+# Step 5: Creating a commit
 
 Now we're going to tell git that we do want it to care about the file! 
 
@@ -99,7 +99,7 @@ Run the command ```git commit -m "Your message about the commit"```
 
 The message you put at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. It shouldn't be something like "asdfadsf" or "foobar". That makes the other people who see your commit sad.
 
-### Step 6: Pushing a branch to the GitHub
+# Step 6: Pushing a branch to the GitHub
 
 Now we'll **push** the commit in your branch to GitHub. This allows other people to see your changes. If they're approved, then they'll be merged into the master branch.
 
@@ -118,7 +118,7 @@ You may see a little note saying a branch with your name has just been pushed in
 
 Now click the green button seen to the bottom right of that picture. We're going to make a **pull request**!
 
-### Step 7: Creating a Pull Request (PR)
+# Step 7: Creating a Pull Request (PR)
 
 A pull request is a way of alerting a repository's owners that you want to make some changes to their code. It allows them to review the code and make sure it looks good.
 
@@ -136,7 +136,7 @@ It's not always the case that the button will be green. In some cases you'll be 
 
 As a side note, it's not nice to push a change directly to the master branch. In most cases you probably won't have the authorization to do that anyways.
 
-### Step 8: Merging a PR
+# Step 8: Merging a PR
 
 Go ahead and press that green 'Merge pull request' button. This will cause your changes to go into the master branch.
 
@@ -154,7 +154,7 @@ From there you'll see a list of all the commits in that branch. You can see the 
 
 You can also see on the right hand side the hash code (SHA-1) of the commit. That's essentially a unique identifier for that specific commit. It's useful because it gives you the ability to refer to specific commits, and if you need to roll-back a change you made, you can use the ```git revert (hash code number)``` command.
 
-### Step 9: Almost done! Time to get your changes on GitHub back to your computer
+# Step 9: Almost done! Time to get your changes on GitHub back to your computer
 
 Right now the repo on GitHub looks a little different than what you have on your local machine. For instance, the commit you made in your branch and merged into the master branch doesn't exist in the master branch on your local machine.
 
@@ -170,7 +170,7 @@ Now we can use the  ```git log``` command again and see all the new commits that
 
 <img width="434" alt="screen shot 2015-08-10 at 11 44 58 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189671/db8ecf40-3fb9-11e5-9d55-4ffa065e47ec.png">
 
-### Step 10: Basking in your git glory
+# Step 10: Basking in your git glory
 
 Great job!
 
