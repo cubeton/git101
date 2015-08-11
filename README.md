@@ -97,7 +97,39 @@ The message you put at the end of the commit should be something related to what
 
 ### Step 6: Pushing a branch to the GitHub
 
+Now we'll **push** the commit in your branch to GitHub. This allows other people to see your changes. If they're approved, then they'll be merged into the master branch.
+
+To push into your new branch on GitHub, the command name is ```git push origin yourbranchname```
+
+<img width="444" alt="screen shot 2015-08-10 at 11 20 32 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189437/70ae7f20-3fb6-11e5-9534-0eae5e877081.png">
+
+GitHub will automatically create the branch for you on the server.
+
+You can check now on GitHub to see that the branch has been created. Go to the fron page of the repository: https://github.com/cubeton/git101
+
+You may see a little note saying a branch with your name has just been pushed into the repository. You can also click the 'branches' link to see your branch listed there.
+
+<img width="813" alt="screen shot 2015-08-10 at 11 23 29 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189475/da30eb86-3fb6-11e5-934f-ca596a2cac69.png">
+
+Now click the green button seen to the bottom right of that picture. We're going to make a **pull request**!
+
 ### Step 7: Creating a Pull Request (PR)
+
+A pull request is a way of alerting a repository's owners that you want to make some changes to their code. It allows them to review the code and make sure it looks good.
+
+This is what the PR page looks like before you've submitted it:
+
+<img width="790" alt="screen shot 2015-08-10 at 11 25 01 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189500/4688c07e-3fb7-11e5-99ed-d75b50ed9e48.png">
+
+This is what it looks like once you've submitted the PR request:
+
+<img width="776" alt="screen shot 2015-08-10 at 11 29 40 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189528/b39a7176-3fb7-11e5-87b1-7fed3e63b6bb.png">
+
+You may see that big green button at the bottom that says 'Merge pull request'. Hitting this button means you'll merge your changes into the master branch.
+
+It's not always the case that the button will be green. In some cases you'll be faced with a **merge conflict** - this is when there's a change in one file that is different in another file, and git can't figure out which version to use. You'll have to manually go through and tell git which version to use.
+
+As a side note, it's not nice to push a change directly to the master branch. In most cases you probably won't have the authorization to do that anyways.
 
 ### Step 8: Merging a PR
 
