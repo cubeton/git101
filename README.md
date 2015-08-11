@@ -51,7 +51,7 @@ You can create a new branch to base your changes off of. What this will do is ma
 
 Let's say you are on the master branch (what you should be automatically), and want to create a new feature. What you do is run ```git checkout -b <my branch name>```. 
 
-Now, if someone makes more changes to the master branch after you've made our branch, your new branch won't know about the changes less you merge those changes into your branch.
+Now, if someone makes more changes to the master branch after you've made our branch, your new branch won't know about the changes unless you **merge** those changes into your branch.
 
 So let's try it out!
 Run ```git checkout -b <your name>```
@@ -61,11 +61,39 @@ Afterwards you can use the ```git branch``` command to confirm that your branch 
 
 <img width="406" alt="screen shot 2015-08-10 at 10 52 54 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189163/9375ea9c-3fb2-11e5-88e4-249c6ff3cce0.png">
  
- You should notice that your now pointed towards your new branch as well.
+You should notice that you're now pointed towards your new branch as well.
 
-### Step 4: Adding a new file
+### Step 4: Adding a new file to the repo
 
-### Step 5: Creating a new commit
+Go ahead and add a new file to the project. You can use any text editor you like. Name it something like yourname.txt.
+Once you add or modify files in a folder that contains a git repo, git notices it. But it won't add the file to a commit unless you tell it to.
+
+After creating the new file, you can use the ```git status``` command to see what files it knows about.
+
+<img width="547" alt="screen shot 2015-08-10 at 10 58 58 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189214/6f61db42-3fb3-11e5-966a-5a7800a582e0.png">
+
+What this is saying above is, 'hey, we noticed you created a new file mnelson.txt, but unless you use the ```git add`` command we aren't going to touch it.'
+
+### Step 5: Creating a commit
+
+Now we're going to tell git that we do want it to care about that file! 
+
+Use the command ```git add <your file name```
+
+What this does is put your file in the staging or index environment. It's saying, 'Hey, we're about to make a commit with this specific file'. This gives you the ability to not commit every single file you've changed.
+
+If you run the ```git status``` command you'll see it looks a little different. Now it's saying that that given file is getting ready to be commited. To clarify, it has **not** yet been put into a commit, but it will be soon!
+
+<img width="384" alt="screen shot 2015-08-10 at 11 08 32 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189304/c2f7a290-3fb4-11e5-9562-23a5bf38cb57.png">
+
+Now we'll make the commit! 
+Run the command ```git commit -am "Your message about the commit"```
+
+
+<img width="508" alt="screen shot 2015-08-10 at 11 17 24 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189408/06e40e84-3fb6-11e5-9397-83ac0ef10736.png">
+
+
+The message you put at the end of the commit should be something related to what the commit contains - maybe it's a new feature, maybe it's a bug fix, maybe it's just fixing a typo. It shouldn't be something like "asdfadsf" or "foobar". That makes the other people who see your commit sad.
 
 ### Step 6: Pushing a branch to the GitHub
 
