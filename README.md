@@ -6,6 +6,10 @@ Any important git-related words are **bolded**
 
 In this tutorial we're going to simulate what it would be like working on a big, collaborative project. This will involve making changes to the code base, opening up a **pull request (PR)** and **merging** your code into the master branch.
 
+### Step 0: Send me your GitHub username
+
+**To push code changes to a GitHub repostiory, you must be listed as a collaborator on that repository. Please email me your GitHub username at mnelson@hubspot.com so I can add you as a collaborator to the git101 repository.**
+
 ### Step 1:  Cloning from a remote server to your local machine 
 
 The process of downloading a **repo** from a remote server to your local machine is known as **cloning**.
@@ -87,7 +91,7 @@ If you run the ```git status``` command you'll see it looks a little different. 
 <img width="384" alt="screen shot 2015-08-10 at 11 08 32 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189304/c2f7a290-3fb4-11e5-9562-23a5bf38cb57.png">
 
 Now we'll make the commit! 
-Run the command ```git commit -am "Your message about the commit"```
+Run the command ```git commit -m "Your message about the commit"```
 
 
 <img width="508" alt="screen shot 2015-08-10 at 11 17 24 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189408/06e40e84-3fb6-11e5-9397-83ac0ef10736.png">
@@ -98,6 +102,7 @@ The message you put at the end of the commit should be something related to what
 ### Step 6: Pushing a branch to the GitHub
 
 Now we'll **push** the commit in your branch to GitHub. This allows other people to see your changes. If they're approved, then they'll be merged into the master branch.
+
 
 To push into your new branch on GitHub, the command name is ```git push origin yourbranchname```
 
