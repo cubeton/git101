@@ -8,7 +8,7 @@ In this tutorial we're going to simulate what it would be like working on a big,
 
 ### Step 0: Send me your GitHub username
 
-**To push code changes to a GitHub repostiory, you must be listed as a collaborator on that repository. Please email me your GitHub username at mnelson@hubspot.com so I can add you as a collaborator to the git101 repository.**
+**To push code changes to a GitHub repostiory, you must be listed as a collaborator on that repository. Please email me your GitHub username at git101@hubspot.com so I can add you as a collaborator to the git101 repository.**
 
 ### Step 1:  Cloning from a remote server to your local machine 
 
@@ -170,89 +170,20 @@ Now we can use the  ```git log``` command again and see all the new commits that
 
 <img width="434" alt="screen shot 2015-08-10 at 11 44 58 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189671/db8ecf40-3fb9-11e5-9d55-4ffa065e47ec.png">
 
-
 ### Step 10: Basking in your git glory
 
 Great job!
+
 <img width="500" alt="octocat" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
 
 
-### Additional Information
-
-Let's say you want to use git but not use GitHub, or want to start a new project (repo) on your computer locally before puttig on GitHub. Below is the process for creating a local git repository and pushing that repository onto GitHub.
-
-#### Creating a git repo locally on your machine
-
-To start a repository locally, you use ```cd``` to move into the folder you want to start the git repository in. 
-
-Then you use the command
-```git init```
-which initalizes a repository in that given folder
-
-#### Pushing a repo onto GitHub
-
-Create a local repository using the ```git init``` command and create commits using the ```git add``` and ```git commit``` commands.
-
-Then you can go into GitHub and create a new repository:
-<img width="1005" alt="screen shot 2015-08-10 at 10 29 12 pm" src="https://cloud.githubusercontent.com/assets/5241432/9188864/4a7b13c4-3faf-11e5-87fb-a13f31db8803.png">
+Now check out the other files in this folder for even more information!
 
 
-Once that onilne repository has been created, you can push to it by using the command:
-```git remote add origin [remote repository URL]``` where the remote repository URL is the one as seen in Step 1 above.
-
-Once your repo is set to be pushed onto GitHub, run:
-```git remote add origin <remote repository URL>``` 
-
-Then run ```git remove -v``` which verifies the remote repository exists
-
-Finally you can push your code using ```git push origin master```
 
 
-#### Cool features
-
-#### The blame tool
-
-Ever see a piece of completely incomprehensible code? Want to know who to complain to? **Git blame** is here to help!
-
-When you click on a file on GitHub, there's a button that says 'Blame' on the top right:
-
-<img width="952" alt="screen shot 2015-08-10 at 10 40 35 pm" src="https://cloud.githubusercontent.com/assets/5241432/9188987/e3ff9ed8-3fb0-11e5-8919-54b03e8a9119.png">
-
-If you click it, it'll give you something that shows who made the change, and with what commit that changed happen. It can be very useful for debugging things!
-
-<img width="938" alt="screen shot 2015-08-10 at 10 42 38 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189022/25bd1260-3fb1-11e5-9862-47482a42b263.png">
 
 
-Unfortunate side effect - I find that half the time when I use the blame tool to see who wrote a terrible piece of code, that it was me :(
-
-#### A cautionary tale
-
-Git is powerful. Git can do a lot of things. Git can also help you undo most changes and mistakes you've made (see 'reference log' or 'reflog').
-
-There is one thing to keep in mind about git - it has access to your files and can modify them. With the wrong command, you can do really dangerous things. 
-
-When I was starting to learn git, I did not know what I was doing. I used ```git init .``` in my home directory which initializes a git repo and adds all your files in it (recursively). Essentially I had put every file on my computer in a git repo.
-
-Then, when I wanted to undo this I used the ```git rm . -r``` command. I thought this would only remove the files from git, but it actually recursively deleted all my files. There were some ways to recover from itit, but.... yeah. It was not good.
-
-Be careful with any 'rm' command.
-
-Learn from my mistake!
-
-
-### Additional Resources
-
-There's a lot of git tutorials out there, but here's some of the better ones:
-
-[Official git site and tutorial](https://git-scm.com/)
-
-[GitHub guides](https://guides.github.com) 
-
-[Commands cheatsheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
-
-[Interactive git tutorial](https://try.github.io/levels/1/challenges/1)
-
-[Visual/interactive cheatsheet](http://ndpsoftware.com/git-cheatsheet.html)
 
 
 
