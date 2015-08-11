@@ -1,4 +1,4 @@
-# Cool features
+# Cool GitHub features
 
 #### The blame tool
 
