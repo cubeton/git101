@@ -31,9 +31,37 @@ It may prompt you to log in with your GitHub information.
 
 ### Step 2: Checking our your project
 
-Now that you have the project on your local machine, you can look at all the files and the changes that have been made to it 
+Now that you have the project on your local machine, you can look at all the files and the changes that have been made to it. There's a couple things you can check out:
+
+1. The history of the project.
+Using the command ```git log``` you can see a list of all the changes made in the project. For instance here is a project that only has one commit so far:
+
+<img width="342" alt="screen shot 2015-08-10 at 10 47 10 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189084/cdffcbc0-3fb1-11e5-9aff-75bb7a4ae89d.png">
+
+2. What branches exist in the project
+Using the command ```git branch``` you can see what branches a project contains
+
+<img width="319" alt="screen shot 2015-08-10 at 10 48 40 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189095/f73abbd0-3fb1-11e5-8fac-ab3ef993a43c.png">
+
+In the picture above you can see that this one project has three branches in it. The master branch (which is basically always there), and 'my-new-branch' and 'my-second-cool-feature'.
 
 ### Step 3: Creating a new branch
+
+You can create a new branch to base your changes off of. What this will do is make a pointer to the current commit you're out, an start basing your code from those changes.
+
+Let's say you are on the master branch (what you should be automatically), and want to create a new feature. What you do is run ```git checkout -b <my branch name>```. 
+
+Now, if someone makes more changes to the master branch after you've made our branch, your new branch won't know about the changes less you merge those changes into your branch.
+
+So let's try it out!
+Run ```git checkout -b <your name>```
+What this does is say, "Hey git, I want to create a new branch (that's what the '-b' flag does) and then I want you to move me onto that branch (that's what the 'checkout' does)."
+
+Afterwards you can use the ```git branch``` command to confirm that your branch really was created!
+
+<img width="406" alt="screen shot 2015-08-10 at 10 52 54 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189163/9375ea9c-3fb2-11e5-88e4-249c6ff3cce0.png">
+ 
+ You should notice that your now pointed towards your new branch as well.
 
 ### Step 4: Adding a new file
 
@@ -44,29 +72,6 @@ Now that you have the project on your local machine, you can look at all the fil
 ### Step 7: Creating a Pull Request (PR)
 
 ### Step 8: Merging a PR
-
-### Step 9: Cool features: the blame tool
-
-
-Ever see a piece of completely incomprehensible code? Want to know who to complain to? **Git blame** is here to help!
-
-
-
-Unfortunate side effect - I find that half the time when I use the blame tool to see who wrote a terrible piece of code, that it was me :(
-
-### Step 10: A cautionary tale
-
-Git is powerful. Git can do a lot of things. Git can also help you undo most changes and mistakes you've made (see 'reference log' or 'reflog').
-
-There is one thing to keep in mind about git - it has access to your files and can modify them. With the wrong command, you can do really dangerous things. 
-
-When I was starting to learn git, I did not know what I was doing. I used ```git init .``` in my home directory which initializes a git repo and adds all your files in it (recursively). Essentially I had put every file in a git repo.'
-
-Then, when I wanted to undo this I used the ```git rm . -r``` command. This recursively whiped my entire computer. There were some ways to recover it, but.... yeah
-
-Be careful with any 'rm' command.
-
-Learn from my mistake!
 
 ### Step 11: Basking in your git glory
 
@@ -103,6 +108,38 @@ Once your repo is set to be pushed onto GitHub, run:
 Then run ```git remove -v``` which verifies the remote repository exists
 
 Finally you can push your code using ```git push origin master```
+
+
+#### Cool features
+
+#### The blame tool
+
+Ever see a piece of completely incomprehensible code? Want to know who to complain to? **Git blame** is here to help!
+
+When you click on a file on GitHub, there's a button that says 'Blame' on the top right:
+
+<img width="952" alt="screen shot 2015-08-10 at 10 40 35 pm" src="https://cloud.githubusercontent.com/assets/5241432/9188987/e3ff9ed8-3fb0-11e5-8919-54b03e8a9119.png">
+
+If you click it, it'll give you something that shows who made the change, and with what commit that changed happen. It can be very useful for debugging things!
+
+<img width="938" alt="screen shot 2015-08-10 at 10 42 38 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189022/25bd1260-3fb1-11e5-9862-47482a42b263.png">
+
+
+Unfortunate side effect - I find that half the time when I use the blame tool to see who wrote a terrible piece of code, that it was me :(
+
+#### A cautionary tale
+
+Git is powerful. Git can do a lot of things. Git can also help you undo most changes and mistakes you've made (see 'reference log' or 'reflog').
+
+There is one thing to keep in mind about git - it has access to your files and can modify them. With the wrong command, you can do really dangerous things. 
+
+When I was starting to learn git, I did not know what I was doing. I used ```git init .``` in my home directory which initializes a git repo and adds all your files in it (recursively). Essentially I had put every file on my computer in a git repo.
+
+Then, when I wanted to undo this I used the ```git rm . -r``` command. I thought this would only remove the files from git, but it actually recursively deleted all my files. There were some ways to recover from itit, but.... yeah. It was not good.
+
+Be careful with any 'rm' command.
+
+Learn from my mistake!
 
 
 ### Additional Resources
