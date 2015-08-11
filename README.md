@@ -14,7 +14,7 @@ To clone a repo, first you need to copy the repo's URL as seen below.
 
 <img width="1053" alt="screen shot 2015-08-10 at 3 45 53 pm" src="https://cloud.githubusercontent.com/assets/5241432/9182147/309ee5bc-3f77-11e5-9a62-4db7fbb83485.png">
 
-Move to where you want to place the project. For instance if you have a 'projects' folder on your desktop, you'd do something like 
+Move to where you want to place the project on your local machine using the ```cd``` (change directory) command. For instance if you have a 'projects' folder on your desktop, you'd do something like 
 ```cd ~/Desktop/projects```
 
 When you clone a repo, it downloads a brand new folder which contains all the files inside of it (so you don't need to make a specific folder for the project)
@@ -33,12 +33,12 @@ It may prompt you to log in with your GitHub information.
 
 Now that you have the project on your local machine, you can look at all the files and the changes that have been made to it. There's a couple things you can check out:
 
-1. The history of the project.
+a. The history of the project.
 Using the command ```git log``` you can see a list of all the changes made in the project. For instance here is a project that only has one commit so far:
 
 <img width="342" alt="screen shot 2015-08-10 at 10 47 10 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189084/cdffcbc0-3fb1-11e5-9aff-75bb7a4ae89d.png">
 
-2. What branches exist in the project
+b. What branches exist in the project
 Using the command ```git branch``` you can see what branches a project contains
 
 <img width="319" alt="screen shot 2015-08-10 at 10 48 40 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189095/f73abbd0-3fb1-11e5-8fac-ab3ef993a43c.png">
@@ -72,13 +72,13 @@ After creating the new file, you can use the ```git status``` command to see wha
 
 <img width="547" alt="screen shot 2015-08-10 at 10 58 58 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189214/6f61db42-3fb3-11e5-966a-5a7800a582e0.png">
 
-What this is saying above is, 'hey, we noticed you created a new file mnelson.txt, but unless you use the ```git add`` command we aren't going to touch it.'
+What this is saying above is, 'Hey, we noticed you created a new file mnelson.txt, but unless you use the ```git add`` command we aren't going to touch it.'
 
 ### Step 5: Creating a commit
 
-Now we're going to tell git that we do want it to care about that file! 
+Now we're going to tell git that we do want it to care about the file! 
 
-Use the command ```git add <your file name```
+Use the command ```git add <your file name>```
 
 What this does is put your file in the staging or index environment. It's saying, 'Hey, we're about to make a commit with this specific file'. This gives you the ability to not commit every single file you've changed.
 
@@ -133,7 +133,40 @@ As a side note, it's not nice to push a change directly to the master branch. In
 
 ### Step 8: Merging a PR
 
-### Step 11: Basking in your git glory
+Go ahead and press that green 'Merge pull request' button. This will cause your changes to go into the master branch.
+
+<img width="788" alt="screen shot 2015-08-10 at 11 35 02 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189587/76631d98-3fb8-11e5-9fdb-17e7dec1c2a4.png">
+
+When done, it's always nice to delete your branch (too many branches can get hard to follow), so hit that grey 'Delete branch' button as well.
+
+You can double check that your commits actually got merged. Go to the first page of the repo (https://github.com/cubeton/git101) and click on the 'Commits' link.
+
+<img width="1011" alt="screen shot 2015-08-10 at 11 37 17 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189612/c4d4b036-3fb8-11e5-9247-e8929645a218.png">
+
+From there you'll see a list of all the commits in that branch. You can see the one that I just merged right up top.
+
+<img width="896" alt="screen shot 2015-08-10 at 11 39 36 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189624/19884476-3fb9-11e5-8347-0e190b6e9470.png">
+
+You can also see on the right hand side the hash code (SHA-1) of the commit. That's essentially a unique identifier for that specific commit. It's useful because it gives you the ability to refer to specific commits, and if you need to roll-back a change you made, you can use the ```git revert (hash code number)``` command.
+
+### Step 9: Almost done! Time to get your changes on GitHub back to your computer
+
+Right now the repo on GitHub looks a little different than what you have on your local machine. For instance, the commit you made in your branch and merged into the master branch doesn't exist in the master branch on your local machine.
+
+In order to get the most recent changes that you or others have merged on GitHub, use the ```git pull origin master``` command.
+
+<img width="994" alt="screen shot 2015-08-10 at 11 43 04 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189654/96ef3974-3fb9-11e5-93fa-b4c06c6c84cb.png">
+
+This shows you all the files that have changed and by how much.
+
+Now we can use the  ```git log``` command again and see all the new commits that happen.
+
+(Note, you may need to switch branches back to the master branch. You can do that using the ```git checkout master``` command).
+
+<img width="434" alt="screen shot 2015-08-10 at 11 44 58 pm" src="https://cloud.githubusercontent.com/assets/5241432/9189671/db8ecf40-3fb9-11e5-9d55-4ffa065e47ec.png">
+
+
+### Step 10: Basking in your git glory
 
 Great job!
 <img width="500" alt="octocat" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
