@@ -20,12 +20,12 @@ Then you can go into GitHub and create a new repository:
 <img width="1005" alt="screen shot 2015-08-10 at 10 29 12 pm" src="https://cloud.githubusercontent.com/assets/5241432/9188864/4a7b13c4-3faf-11e5-87fb-a13f31db8803.png">
 
 
-Once that onilne repository has been created, you can push to it by using the command:
-```git remote add origin [remote repository URL]``` where the remote repository URL is the one as seen in Step 1 above.
+Once that online repository has been created, you can push your changes to it by using the command:
+```git remote add origin [remote repository URL]``` where the remote repository URL is lited on the new repoisotyr page.
 
 Once your repo is set to be pushed onto GitHub, run:
 ```git remote add origin <remote repository URL>``` 
 
 Then run ```git remove -v``` which verifies the remote repository exists
 
-Finally you can push your code using ```git push origin master```
+Finally you can push your code to GitHub using ```git push origin master```
