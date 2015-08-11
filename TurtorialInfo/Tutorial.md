@@ -33,6 +33,7 @@ It should look something like:
 
 It may prompt you to log in with your GitHub information.
 
+
 # Step 2: Checking out your project
 
 Now that you have the project on your local machine, you can look at all the files and the changes that have been made to it. There's a couple things you can check out:
@@ -110,6 +111,11 @@ To push into your new branch on GitHub, the command name is ```git push origin y
 
 GitHub will automatically create the branch for you on the server.
 
+You may be wondering what that "origin" word is in the command above. What happens when you clone a remote repository to your local machine, git creates an **alias** for you. In nearly all cases this alias is **origin**. It's essentially a shorthand for that remote repository's URL. This means to push your changes to the remote repository, you could've used either the command:
+```git push git@github.com:git/git.git yourbranchname```
+or
+```git push origin yourbranchname```
+
 You can check now on GitHub to see that the branch has been created. Go to the fron page of the repository: https://github.com/cubeton/git101
 
 You may see a little note saying a branch with your name has just been pushed into the repository. You can also click the 'branches' link to see your branch listed there.
@@ -177,7 +183,7 @@ Great job!
 <img width="500" alt="octocat" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
 
 
-Now check out the other files in this folder for even more information!
+Now check out the other files in this folder for even more git tips and tricks!
 
 
 
