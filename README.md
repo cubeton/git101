@@ -4,6 +4,7 @@ Tutorial on git and GitHub for beginners, designed for the [Women Who Code meetu
 
 Any important git-related words are **bolded**
 
+In this tutorial we're going to simulate what it would be like working on a big, collaborative project. This will involve making changes to the code base, opening up a **pull request (PR)** and **merging** your code into the master branch.
 
 ### Step 1:  Cloning from a remote server to your local machine 
 
@@ -27,12 +28,6 @@ It should look something like:
 ![screen shot 2015-08-10 at 3 52 09 pm](https://cloud.githubusercontent.com/assets/5241432/9182329/0e8ee4bc-3f78-11e5-8467-5bf4be3fe914.png)
 
 It may prompt you to log in with your GitHub information.
-
-### Alternative Step 1: Creating a git repo locally on your machine
-
-To start a repository locally, you use cd to folder you want to start the git repository in. 
-
-Later on you can upload your local repository to GitHub or another 
 
 ### Step 2: Checking our your project
 
@@ -77,6 +72,52 @@ Learn from my mistake!
 
 Great job!
 <img width="500" alt="octocat" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
+
+
+### Additional Information
+
+Let's say you want to use git but not use GitHub, or want to start a new project (repo) on your computer locally before puttig on GitHub. Below is the process for creating a local git repository and pushing that repository onto GitHub.
+
+#### Creating a git repo locally on your machine
+
+To start a repository locally, you use ```cd``` to move into the folder you want to start the git repository in. 
+
+Then you use the command
+```git init```
+which initalizes a repository in that given folder
+
+#### Pushing a repo onto GitHub
+
+Create a local repository using the ```git init``` command and create commits using the ```git add``` and ```git commit``` commands.
+
+Then you can go into GitHub and create a new repository:
+<img width="1005" alt="screen shot 2015-08-10 at 10 29 12 pm" src="https://cloud.githubusercontent.com/assets/5241432/9188864/4a7b13c4-3faf-11e5-87fb-a13f31db8803.png">
+
+
+Once that onilne repository has been created, you can push to it by using the command:
+```git remote add origin [remote repository URL]``` where the remote repository URL is the one as seen in Step 1 above.
+
+Once your repo is set to be pushed onto GitHub, run:
+```git remote add origin <remote repository URL>``` 
+
+Then run ```git remove -v``` which verifies the remote repository exists
+
+Finally you can push your code using ```git push origin master```
+
+
+### Additional Resources
+
+There's a lot of git tutorials out there, but here's some of the better ones:
+
+[Official git site and tutorial](https://git-scm.com/)
+
+[GitHub guides](https://guides.github.com) 
+
+[Commands cheatsheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+
+[Interactive git tutorial](https://try.github.io/levels/1/challenges/1)
+
+[Visual/interactive cheatsheet](http://ndpsoftware.com/git-cheatsheet.html)
 
 
 
