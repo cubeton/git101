@@ -1,4 +1,4 @@
-#### Cool features
+# Cool features
 
 #### The blame tool
 
