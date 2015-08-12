@@ -183,7 +183,7 @@ Great job!
 <img width="500" alt="octocat" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png">
 
 
-Now check out the other files in this folder for even more git tips and tricks!
+Now if you'd like, you can check out the other files in this folder for even more git tips and tricks.
 
 
 # Step 11: More teamwork
