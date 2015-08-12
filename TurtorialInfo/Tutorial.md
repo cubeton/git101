@@ -188,7 +188,7 @@ Now check out the other files in this folder for even more git tips and tricks!
 
 # Step 11: More teamwork
 
-If you have extra time, I'd recommend working with your team to simulate a smaller team project. For instance, have your team make a new folder with your team name, and add some files with text in it. Then try pushing those changes to this remote repository. 
+If you have extra time, I'd recommend working with your team to simulate a smaller team project. For instance, have your team make a new folder with your team name, and add some files with text in it. Then try pushing those changes to this remote repository. The more you use git, the more comfortable you'll... git with it :)
 
 Afterwards, the team can start making changes to files they didn't originally create. Then retry the process of using the pull request feature. Afterwards you can use the **git blame** and the **git history** tool on GitHub to see how you can keep track of all the changes people have made in a file, and all the people who have made changes.
 
