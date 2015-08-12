@@ -8,7 +8,7 @@ In this tutorial we're going to simulate what it would be like working on a big,
 
 # Step 0: Send me your GitHub username
 
-**To push code changes to a GitHub repostiory, you must be listed as a collaborator on that repository. Please email me your GitHub username at git101@hubspot.com so I can add you as a collaborator to the git101 repository.**
+**To push code changes to a GitHub repostiory, you must be listed as a collaborator on that repository. Please email me your GitHub username at git101.hubspot@gmail.com so I can add you as a collaborator to the git101 repository.**
 
 # Step 1:  Cloning from a remote server to your local machine 
 
