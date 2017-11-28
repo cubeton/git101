@@ -21,7 +21,7 @@ Then you can go into GitHub and create a new repository:
 
 
 Once that online repository has been created, you can push your changes to it by using the command:
-```git remote add origin [remote repository URL]``` where the remote repository URL is lited on the new repoisotyr page.
+```git remote add origin [remote repository URL]``` where the remote repository URL is listed on the new repository page.
 
 Once your repo is set to be pushed onto GitHub, run:
 ```git remote add origin <remote repository URL>``` 
