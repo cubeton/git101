@@ -6,7 +6,7 @@ There's a lot of git tutorials out there, but here's some of the better ones:
 
 [GitHub guides](https://guides.github.com) 
 
-[Commands cheatsheet](https://training.github.com/kit/downloads/github-git-cheat-sheet.pdf)
+[Commands cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
 [Interactive git tutorial](https://try.github.io/levels/1/challenges/1)
 
