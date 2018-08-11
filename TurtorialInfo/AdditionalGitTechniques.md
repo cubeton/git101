@@ -26,7 +26,7 @@ Once that online repository has been created, you can push your changes to it by
 Once your repo is set to be pushed onto GitHub, run:
 ```git remote add origin <remote repository URL>``` 
 
-Then run ```git remove -v``` which verifies the remote repository exists
+Then run ```git remote -v``` which verifies the remote repository exists
 
 Finally you can push your code to GitHub using ```git push origin master```
 
