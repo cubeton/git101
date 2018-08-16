@@ -1,6 +1,6 @@
 # Additional Git Techniques For Your Toolbelt
 
-Let's say you want to use git but not use GitHub, or want to start a new project (repo) on your computer locally before puttig on GitHub. Below is the process for creating a local git repository and pushing that repository onto GitHub.
+Let's say you want to use git but not use GitHub, or want to start a new project (repo) on your computer locally before putting it on GitHub. Below is the process for creating a local git repository and pushing that repository onto GitHub.
 
 ### Creating a git repo locally on your machine
 
